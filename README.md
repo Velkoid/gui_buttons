@@ -1,14 +1,14 @@
 # gui_buttons
 Toggle buttons for input.
 
-import tkinter as tk
+    import tkinter as tk
 
-class App(tk.Frame):
-    def __init__(self, master=None):
-        master.minsize(width=200, height=200)
-        super().__init__(master)
-        self.pack()
-        self.create_widgets()
+    class App(tk.Frame):
+        def __init__(self, master=None):
+            master.minsize(width=200, height=200)
+            super().__init__(master)
+            self.pack()
+            self.create_widgets()
 
     def create_widgets(self):
         self.hi_there = tk.Button(self)
@@ -25,8 +25,8 @@ class App(tk.Frame):
         print("Input Received")
 
 
-root = tk.Tk()
-root.title("Input Application")
-app = App(master=root)
-root.resizable(width=False, height=False)
-app.mainloop()
+    root = tk.Tk()
+    root.title("Input Application")
+    app = App(master=root)
+    root.resizable(width=False, height=False)
+    app.mainloop()
